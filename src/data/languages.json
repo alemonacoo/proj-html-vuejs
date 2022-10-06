@@ -1,0 +1,14 @@
+[
+  {
+    "language": "English",
+    "image": "en.png"
+  },
+  {
+    "language": "French",
+    "image": "fr.png"
+  },
+  {
+    "language": "German",
+    "image": "de.png"
+  }
+]
