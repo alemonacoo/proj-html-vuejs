@@ -1,0 +1,32 @@
+/* Colors */
+$white: #fefefe;
+$tuna: #343142;
+$silver: #bcbcbc;
+$mountain_meadow: #1eae96;
+$boulder: #797979;
+$alizarin_crimson: #e2261a;
+$sunglo: #df7470;
+$international_klein_blue: #0427a1;
+$turquoise_blue: #61e6d2;
+$japanese_maple: #780601;
+$porcelain: #eceeef;
+$charade: #282935;
+$au_chico: #8c6157;
+$jungle_green: #2fad96;
+$sandal: #9f8c67;
+$jungle_green_vibrant: #25ac94;
+$dorado_muted: #5d5450;
+$thunderbird_dark_vibrant: #c92217;
+$sand_dune_dark_muted: #81695e;
+$link_water_ligth_vibrant: #ecf2f9;
+
+/* mixins */
+@mixin flex-col {
+    display: flex;
+    flex-direction: column;
+};
+@mixin flex-row {
+    display: flex;
+};
+
+
