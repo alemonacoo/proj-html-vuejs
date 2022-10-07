@@ -27,7 +27,7 @@
     <!-- Right Section: Languages List, User Infos, Searchbar -->
     <div class="right-side">
       <!-- Languages selector -->
-      <!-- Displays: selected language as first element of array and other languages in ul,
+      <!-- Explanation: selected language as first element of array and other languages in ul,
       if another language is selected then languages[0] changes  -->
       <div
         class="languages list"
@@ -81,7 +81,8 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { faCircleUser } from "@fortawesome/free-regular-svg-icons";
-library.add(faCircleUser, faMagnifyingGlass);
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+library.add(faCircleUser, faMagnifyingGlass, faChevronDown);
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 Vue.config.productionTip = false;
 
@@ -149,6 +150,7 @@ header {
     background-color: white;
     transform: translate(-5px, 5px);
     box-shadow: 0px 5px 6px -1px black;
+    z-index: 1;
     li {
       margin: 7px 0px;
       min-width: 100px;
@@ -176,7 +178,8 @@ header {
     outline: none;
   }
   .list:hover,
-  li:hover {
+  li:hover,
+  input:hover {
     cursor: pointer;
     text-decoration: underline;
   }

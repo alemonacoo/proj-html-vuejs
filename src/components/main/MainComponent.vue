@@ -1,16 +1,23 @@
 <template>
-<main>
-    main
-</main>
+  <main>
+    <!-- First Section: Jumbotron -->
+    <section>
+      <JumbotronComponent />
+    </section>
+  </main>
 </template>
 
 <script>
-export default {
-    name: 'MainComponent'
+import JumbotronComponent from "@/components/main/JumbotronComponent.vue";
 
-}
+export default {
+  name: "MainComponent",
+  components: {
+    JumbotronComponent,
+  },
+};
 </script>
 
-<style>
-
+<style lang="scss" scoped>
+@import "@/main.scss";
 </style>
