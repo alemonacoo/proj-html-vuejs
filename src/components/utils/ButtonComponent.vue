@@ -20,6 +20,7 @@ export default {
 <style lang="scss" scoped>
 @import "@/main.scss";
 button {
+  width: fit-content;
   padding: 8px 30px;
   border-radius: 5px;
 }
@@ -34,7 +35,7 @@ button {
 .empty {
   color: $jungle_green;
   background-color: white;
-  border: solid 1px $jungle_green;
+  border: solid 1px lightgray;
   a:visited {
     color: $jungle_green;
   }
@@ -44,6 +45,7 @@ a {
 }
 button:hover {
   background-color: rgb(63, 29, 99);
+  border: solid 1px rgb(63, 29, 99);
   cursor: pointer;
   color: white;
   border: none;
