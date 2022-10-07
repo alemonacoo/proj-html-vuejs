@@ -1,9 +1,11 @@
 <template>
   <header>
-    <!-- <script src="https://kit.fontawesome.com/710259c6f3.js" crossorigin="anonymous"></script> -->
+    <!-- Left Section: Logo container -->
     <div class="img-container">
       <img src="@/assets/img/dark-logo.png" alt="max_coach_logo" />
     </div>
+
+    <!-- Middle Section: Dropdown Lists -->
     <div class="lists-container">
       <div
         class="list"
@@ -21,7 +23,12 @@
         </div>
       </div>
     </div>
-    <div>
+
+    <!-- Right Section: Languages List, User Infos, Searchbar -->
+    <div class="right-side">
+      <!-- Languages selector -->
+      <!-- Displays: selected language as first element of array and other languages in ul,
+      if another language is selected then languages[0] changes  -->
       <div
         class="languages list"
         @click="displayedLanguages = !displayedLanguages"
@@ -49,8 +56,17 @@
           </li>
         </ul>
       </div>
-      <div class="user"></div>
-      <div class="search-bar"></div>
+
+      <!-- User -->
+      <div class="user">
+        <font-awesome-icon class="icon" icon="fa-regular fa-circle-user" />
+      </div>
+
+      <!-- Search Bar -->
+      <div class="search-bar">
+        <input type="text" name="search" placeholder="Search..." />
+        <font-awesome-icon class="icon" icon="fa-solid fa-magnifying-glass" />
+      </div>
     </div>
   </header>
 </template>
@@ -59,6 +75,16 @@
 import dropdowns from "@/data/headerDropdowns.json";
 import languages from "@/data/languages.json";
 
+//Importing fontawesome star icons
+import Vue from "vue";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import { faCircleUser } from "@fortawesome/free-regular-svg-icons";
+library.add(faCircleUser, faMagnifyingGlass);
+Vue.component("font-awesome-icon", FontAwesomeIcon);
+Vue.config.productionTip = false;
+
 export default {
   name: "HeaderComponent",
   data() {
@@ -66,7 +92,7 @@ export default {
       dropdowns,
       languages,
       activeIndex: 0,
-      displayedLanguages: true,
+      displayedLanguages: false,
     };
   },
   mounted() {
@@ -102,7 +128,6 @@ header {
   min-height: 7vh;
   max-height: 7vh;
   width: 100%;
-  border: solid black 1px;
   .img-container {
     transform: translateX(70%);
     img {
@@ -123,7 +148,7 @@ header {
     padding: 0px 5px;
     background-color: white;
     transform: translate(-5px, 5px);
-    border: solid black 1px;
+    box-shadow: 0px 5px 6px -1px black;
     li {
       margin: 7px 0px;
       min-width: 100px;
@@ -135,6 +160,25 @@ header {
   .language-img {
     height: 2vh;
     margin-right: 5px;
+  }
+  .right-side {
+    display: flex;
+    align-items: center;
+    .icon {
+      margin: 0px 5px;
+    }
+  }
+  input {
+    height: 7vh;
+    border: none;
+    border-left: solid 1px lightgrey;
+    padding: 10px;
+    outline: none;
+  }
+  .list:hover,
+  li:hover {
+    cursor: pointer;
+    text-decoration: underline;
   }
 }
 </style>
