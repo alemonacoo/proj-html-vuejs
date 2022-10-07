@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import JumbotronComponent from "@/components/main/JumbotronComponent.vue";
+import JumbotronComponent from "@/components/main/organisms/JumbotronComponent.vue";
 
 export default {
   name: "MainComponent",

@@ -124,13 +124,12 @@ header {
   @include flex-row;
   justify-content: space-between;
   align-items: center;
-  padding: 0% 2%;
-  font-size: 0.9rem;
+  padding-left: 10%;
+  font-size: 0.8rem;
   min-height: 7vh;
   max-height: 7vh;
   width: 100%;
   .img-container {
-    transform: translateX(70%);
     img {
       height: 3vh;
     }
@@ -167,7 +166,10 @@ header {
     display: flex;
     align-items: center;
     .icon {
-      margin: 0px 5px;
+      margin: 0px 10px;
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
   input {
@@ -178,8 +180,7 @@ header {
     outline: none;
   }
   .list:hover,
-  li:hover,
-  input:hover {
+  li:hover {
     cursor: pointer;
     text-decoration: underline;
   }

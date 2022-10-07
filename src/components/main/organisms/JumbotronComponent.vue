@@ -23,7 +23,7 @@
 </template>
 
 <script>
-import ButtonComponent from "@/components/utils/ButtonComponent.vue";
+import ButtonComponent from "@/components/main/atoms/ButtonComponent.vue";
 
 export default {
   name: "JumbotronComponent",
@@ -41,7 +41,7 @@ export default {
   background-color: $link_water_ligth_vibrant;
   position: relative;
   .left-side {
-    padding: 10% 0% 10% 10%;
+    padding: 10%;
     width: 50%;
     display: flex;
     flex-direction: column;
