@@ -29,16 +29,15 @@
       <!-- Languages selector -->
       <!-- Explanation: selected language as first element of array and other languages in ul,
       if another language is selected then languages[0] changes  -->
-      <div
-        class="languages list"
-        @click="displayedLanguages = !displayedLanguages"
-      >
-        <img
-          :src="require('../../assets/img/' + languages[0].image)"
-          alt="language"
-          class="language-img"
-        />
-        {{ languages[0].language }}
+      <div @click="displayedLanguages = !displayedLanguages">
+        <div class="list">
+          <img
+            :src="require('../../assets/img/' + languages[0].image)"
+            alt="language"
+            class="language-img"
+          />
+          {{ languages[0].language }}
+        </div>
         <ul v-if="displayedLanguages">
           <li
             v-for="(language, index) in languages"
@@ -140,6 +139,8 @@ header {
       @include flex-col;
       position: relative;
       margin: 0px 14px;
+      height: 7vh;
+      justify-content: center;
     }
   }
   ul {
@@ -180,9 +181,10 @@ header {
     outline: none;
   }
   .list:hover,
-  li:hover {
+  li:hover,
+  a:hover {
     cursor: pointer;
-    text-decoration: underline;
+    color: lightgray;
   }
 }
 </style>
