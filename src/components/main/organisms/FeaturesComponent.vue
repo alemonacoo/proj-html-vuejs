@@ -1,13 +1,11 @@
 <template>
   <div class="features-component">
-    <div class="title">
-      <p>Let's Dream Big Together</p>
-      <h2>
-        We are pioneers of the digital approach, using leading-edge technology
+    <TitleComponent
+      title="Let's Dream Big Together"
+      description="We are pioneers of the digital approach, using leading-edge technology
         to simplify procedures and apply executive coaching in the new age of
-        digitalization
-      </h2>
-    </div>
+        digitalization"
+    />
     <div class="feature-cards-container">
       <FeatureCardComponent
         title="One to one"
@@ -58,12 +56,14 @@
 <script>
 import ButtonComponent from "@/components/main/atoms/ButtonComponent.vue";
 import FeatureCardComponent from "@/components/main/molecules/FeatureCardComponent.vue";
+import TitleComponent from "@/components/main/atoms/TitleComponent.vue";
 
 export default {
   name: "FeaturesComponent",
   components: {
     ButtonComponent,
     FeatureCardComponent,
+    TitleComponent,
   },
 };
 </script>
@@ -73,7 +73,6 @@ export default {
 .features-component {
   @include flex-col;
   align-items: center;
-  // min-height: 70vh;
   padding: 5% 15%;
   .title {
     @include flex-col;

@@ -4,9 +4,14 @@
     <section>
       <JumbotronComponent />
     </section>
+
+    <!-- Second Section: Features -->
     <section>
       <FeaturesComponent />
     </section>
+
+    <!-- Third Section: -->
+    <section></section>
   </main>
 </template>
 
