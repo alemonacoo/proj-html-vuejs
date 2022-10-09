@@ -1,10 +1,10 @@
 <template>
-  <div class="explore-section"></div>
+  <div class="courses-section"></div>
 </template>
 
 <script>
 export default {
-  name: "ExploreSection",
+  name: "CoursesSection",
 };
 </script>
 

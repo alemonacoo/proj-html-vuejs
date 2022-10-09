@@ -17,7 +17,7 @@
 
     <!-- Fourth Section: Explore Section-->
     <section>
-      <ExploreSection />
+      <CoursesSection />
     </section>
 
     <!-- Fifth Section: Q&A Section-->
@@ -46,7 +46,7 @@
 import JumbotronSection from "@/components/main/organisms/JumbotronSection.vue";
 import FeaturesSection from "@/components/main/organisms/FeaturesSection.vue";
 import DiscoverSection from "@/components/main/organisms/DiscoverSection.vue";
-import ExploreSection from "@/components/main/organisms/ExploreSection.vue";
+import CoursesSection from "@/components/main/organisms/CoursesSection.vue";
 import QandASection from "@/components/main/organisms/QandASection.vue";
 import EventsSection from "@/components/main/organisms/EventsSection.vue";
 import ReviewsSection from "@/components/main/organisms/ReviewsSection.vue";
@@ -58,7 +58,7 @@ export default {
     JumbotronSection,
     FeaturesSection,
     DiscoverSection,
-    ExploreSection,
+    CoursesSection,
     QandASection,
     EventsSection,
     ReviewsSection,
