@@ -22,11 +22,19 @@ $link_water_ligth_vibrant: #ecf2f9;
 
 /* mixins */
 @mixin flex-col {
-    display: flex;
-    flex-direction: column;
-};
+  display: flex;
+  flex-direction: column;
+}
 @mixin flex-row {
-    display: flex;
-};
+  display: flex;
+}
 
-
+@mixin AM_grey_background {
+  background-color: rgb(248, 248, 248);
+}
+@mixin AM_big_padding {
+  padding: 5% 15%;
+}
+@mixin AM_small_padding {
+  padding: 5%;
+}

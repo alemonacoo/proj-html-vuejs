@@ -14,6 +14,31 @@
     <section>
       <DiscoverSection />
     </section>
+
+    <!-- Fourth Section: Explore Section-->
+    <section>
+      <ExploreSection />
+    </section>
+
+    <!-- Fifth Section: Q&A Section-->
+    <section>
+      <QandASection />
+    </section>
+
+    <!-- Sixth Section: Events Section-->
+    <section>
+      <EventsSection />
+    </section>
+
+    <!-- Seventh Section: Reviews Section-->
+    <section>
+      <ReviewsSection />
+    </section>
+
+    <!-- Eigth Section: Newsletter Section-->
+    <section>
+      <NewsletterSection />
+    </section>
   </main>
 </template>
 
@@ -21,6 +46,11 @@
 import JumbotronSection from "@/components/main/organisms/JumbotronSection.vue";
 import FeaturesSection from "@/components/main/organisms/FeaturesSection.vue";
 import DiscoverSection from "@/components/main/organisms/DiscoverSection.vue";
+import ExploreSection from "@/components/main/organisms/ExploreSection.vue";
+import QandASection from "@/components/main/organisms/QandASection.vue";
+import EventsSection from "@/components/main/organisms/EventsSection.vue";
+import ReviewsSection from "@/components/main/organisms/ReviewsSection.vue";
+import NewsletterSection from "@/components/main/organisms/NewsletterSection.vue";
 
 export default {
   name: "MainComponent",
@@ -28,6 +58,11 @@ export default {
     JumbotronSection,
     FeaturesSection,
     DiscoverSection,
+    ExploreSection,
+    QandASection,
+    EventsSection,
+    ReviewsSection,
+    NewsletterSection,
   },
 };
 </script>

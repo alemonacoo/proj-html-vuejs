@@ -23,8 +23,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "@/main.scss";
 .discover-card {
-  @import "@/main.scss";
+  @include flex-col;
+  justify-content: space-between;
   margin: 10px;
   height: 52vh;
   width: 250px;
@@ -38,13 +40,9 @@ export default {
     height: 50%;
   }
   .text-area {
-    @include flex-col;
     text-align: center;
-    gap: 10px;
-    height: 30%;
-    justify-content: center;
-    align-items: center;
     h4 {
+      margin-bottom: 10px;
       font-size: 1rem;
     }
     p {
@@ -53,7 +51,7 @@ export default {
   }
   .link-area {
     @include flex-col;
-    height: 20%;
+    height: 12%;
     justify-content: center;
     align-items: center;
     border-top: solid 0.5px lightgrey;
@@ -65,6 +63,17 @@ export default {
     }
     a:visited {
       color: $jungle_green;
+    }
+  }
+}
+.discover-card:hover {
+  .link-area {
+    background-color: $jungle_green;
+    a {
+      color: white;
+    }
+    a:visited {
+      color: white;
     }
   }
 }

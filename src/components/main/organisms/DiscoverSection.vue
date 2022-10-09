@@ -38,8 +38,8 @@ export default {
 <style lang="scss" scoped>
 @import "@/main.scss";
 .discover-section {
-  background-color: rgb(248, 248, 248);
-  padding: 5%;
+  @include AM_grey_background;
+  @include AM_small_padding;
   .discover-cards-container {
     @include flex-row;
     justify-content: center;

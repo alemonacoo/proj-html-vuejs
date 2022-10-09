@@ -72,8 +72,8 @@ export default {
 @import "@/main.scss";
 .features-component {
   @include flex-col;
+  @include AM_big_padding;
   align-items: center;
-  padding: 5% 15%;
   .title {
     @include flex-col;
     text-align: center;
