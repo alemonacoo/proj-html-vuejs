@@ -26,7 +26,7 @@
 import ButtonComponent from "@/components/main/atoms/ButtonComponent.vue";
 
 export default {
-  name: "JumbotronComponent",
+  name: "JumbotronSection",
   components: {
     ButtonComponent,
   },

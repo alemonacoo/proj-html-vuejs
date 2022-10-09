@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Consultative Training",
+    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed at eaque nesciunt inventore facilis?",
+    "img": "home-business-service-slide-01-480x298.jpg"
+  },
+  {
+    "title": "Real Deal Coaching",
+    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed at eaque nesciunt inventore facilis?",
+    "img": "home-business-service-slide-02-480x298.jpg"
+  },
+  {
+    "title": "Advisor Training Program",
+    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed at eaque nesciunt inventore facilis?",
+    "img": "home-business-service-slide-03-480x298.jpg"
+  }
+]

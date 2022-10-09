@@ -3,7 +3,6 @@
     <div class="img-container">
       <img :src="require('@/assets/img/' + img)" alt="feature_card_img" />
     </div>
-    <!-- <img src="" alt="" /> -->
     <div class="description">
       <h3>{{ title }}</h3>
       <p>{{ description }}</p>

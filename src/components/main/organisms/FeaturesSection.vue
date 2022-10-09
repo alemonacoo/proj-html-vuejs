@@ -56,10 +56,10 @@
 <script>
 import ButtonComponent from "@/components/main/atoms/ButtonComponent.vue";
 import FeatureCardComponent from "@/components/main/molecules/FeatureCardComponent.vue";
-import TitleComponent from "@/components/main/atoms/TitleComponent.vue";
+import TitleComponent from "@/components/main/molecules/TitleComponent.vue";
 
 export default {
-  name: "FeaturesComponent",
+  name: "FeaturesSection",
   components: {
     ButtonComponent,
     FeatureCardComponent,

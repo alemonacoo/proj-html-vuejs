@@ -2,28 +2,32 @@
   <main>
     <!-- First Section: Jumbotron -->
     <section>
-      <JumbotronComponent />
+      <JumbotronSection />
     </section>
 
     <!-- Second Section: Features -->
     <section>
-      <FeaturesComponent />
+      <FeaturesSection />
     </section>
 
-    <!-- Third Section: -->
-    <section></section>
+    <!-- Third Section: Discover Section-->
+    <section>
+      <DiscoverSection />
+    </section>
   </main>
 </template>
 
 <script>
-import JumbotronComponent from "@/components/main/organisms/JumbotronComponent.vue";
-import FeaturesComponent from "@/components/main/organisms/FeaturesComponent.vue";
+import JumbotronSection from "@/components/main/organisms/JumbotronSection.vue";
+import FeaturesSection from "@/components/main/organisms/FeaturesSection.vue";
+import DiscoverSection from "@/components/main/organisms/DiscoverSection.vue";
 
 export default {
   name: "MainComponent",
   components: {
-    JumbotronComponent,
-    FeaturesComponent,
+    JumbotronSection,
+    FeaturesSection,
+    DiscoverSection,
   },
 };
 </script>
