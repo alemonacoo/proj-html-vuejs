@@ -16,6 +16,12 @@
         />
       </div>
     </div>
+    <div id="courses-section-end-text">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur optio,
+        perferendis molestias odio porro necessitatibus
+      </p>
+    </div>
   </div>
 </template>
 
@@ -47,6 +53,15 @@ export default {
     flex-wrap: wrap;
     justify-content: center;
     margin: 4% 0%;
+  }
+  #courses-section-end-text {
+    @include flex-row;
+    justify-content: center;
+    widows: 100%;
+    p {
+      width: 60%;
+      text-align: center;
+    }
   }
 }
 </style>

@@ -15,7 +15,7 @@
       <DiscoverSection />
     </section>
 
-    <!-- Fourth Section: Explore Section-->
+    <!-- Fourth Section: Courses Section-->
     <section>
       <CoursesSection />
     </section>
