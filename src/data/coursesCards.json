@@ -1,0 +1,34 @@
+[
+  {
+    "title": "Learning to Write as a Professional Author",
+    "price": 40.0,
+    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed at eaque nesciunt inventore facilis?",
+    "hours": 20,
+    "students": 50,
+    "img": "stock-full-hd-01-443x600.jpg"
+  },
+  {
+    "title": "Customer-centric Info-Tech Strategies",
+    "price": 0,
+    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed at eaque nesciunt inventore facilis?",
+    "hours": 20,
+    "students": 50,
+    "img": "stock-full-hd-02-443x600.jpg"
+  },
+  {
+    "title": "Open Programming Courses for Everyone: Python",
+    "price": 19.0,
+    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed at eaque nesciunt inventore facilis?",
+    "hours": 20,
+    "students": 50,
+    "img": "stock-full-hd-03-443x600.jpg"
+  },
+  {
+    "title": "Academic Listening and Note-taking",
+    "price": 26.0,
+    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed at eaque nesciunt inventore facilis?",
+    "hours": 20,
+    "students": 50,
+    "img": "stock-full-hd-04-443x600.jpg"
+  }
+]

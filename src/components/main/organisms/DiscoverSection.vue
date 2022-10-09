@@ -42,6 +42,7 @@ export default {
   @include AM_small_padding;
   .discover-cards-container {
     @include flex-row;
+    flex-wrap: wrap;
     justify-content: center;
     margin: 4% 0%;
   }
