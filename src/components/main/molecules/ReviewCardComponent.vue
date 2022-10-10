@@ -71,6 +71,9 @@ export default {
   }
 }
 .invisible {
-  opacity: 0.3;
+  opacity: 0.4;
+}
+.review:hover {
+  cursor: pointer;
 }
 </style>

@@ -86,12 +86,13 @@ export default {
 <style lang="scss" scoped>
 @import "@/main.scss";
 .reviews-section {
-  @include AM_small_padding;
+  padding: 7% 5%;
   background-color: rgb(248, 248, 248);
   .review-cards-container {
     @include flex-row;
     justify-content: center;
     margin: 4% 0%;
+    overflow-x: hidden;
   }
   .buttons-container {
     @include flex-row;
