@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Florence Themes",
+    "job": "Multimedia Admin",
+    "pic": "testimonial-avata-03.jpg",
+    "title": "It's a choice of quality for people with special needs",
+    "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quam laudantium repellat? Tenetur, obcaecati voluptates recusandae, asperiores explicabo doloremque ex mollitia, ea nihil omnis nam placeat illum earum deserunt eius."
+  },
+  {
+    "name": "Mina Hollace",
+    "job": "Freelancer",
+    "pic": "testimonial-avata-02.jpg",
+    "title": "High level of efficiency and scientific teaching methods",
+    "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quam laudantium repellat? Tenetur, obcaecati voluptates recusandae, asperiores explicabo doloremque ex mollitia, ea nihil omnis nam placeat illum earum deserunt eius."
+  },
+  {
+    "name": "Madley Pondor",
+    "job": "IT Specialist",
+    "pic": "testimonial-avata-01.jpg",
+    "title": "Professional team of specialists and passionate mentors at reach",
+    "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quam laudantium repellat? Tenetur, obcaecati voluptates recusandae, asperiores explicabo doloremque ex mollitia, ea nihil omnis nam placeat illum earum deserunt eius."
+  },
+  {
+    "name": "Pippo",
+    "job": "HR Expert",
+    "pic": "testimonial-avata-04.jpg",
+    "title": "It's a choice of quality for people with special needs",
+    "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quam laudantium repellat? Tenetur, obcaecati voluptates recusandae, asperiores explicabo doloremque ex mollitia, ea nihil omnis nam placeat illum earum deserunt eius."
+  },
+  {
+    "name": "Pluto",
+    "job": "Mascotte",
+    "pic": "testimonial-avata-05.jpg",
+    "title": "High level of efficiency and scientific teaching methods",
+    "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quam laudantium repellat? Tenetur, obcaecati voluptates recusandae, asperiores explicabo doloremque ex mollitia, ea nihil omnis nam placeat illum earum deserunt eius."
+  },
+  {
+    "name": "Paperino",
+    "job": "Professional complainer",
+    "pic": "testimonial-avata-06.jpg",
+    "title": "Professional team of specialists and passionate mentors at reach",
+    "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quam laudantium repellat? Tenetur, obcaecati voluptates recusandae, asperiores explicabo doloremque ex mollitia, ea nihil omnis nam placeat illum earum deserunt eius."
+  }
+]
