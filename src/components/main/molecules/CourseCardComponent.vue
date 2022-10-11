@@ -8,8 +8,13 @@
       <h4>{{ title }}</h4>
       <div class="description-more">
         <p>
-          <span>O {{ hours }} Lessons</span
-          ><span>O {{ students }} Students</span>
+          <span>
+            <IconComponent type="regular" icon="note-sticky" />
+            {{ hours }} Lessons</span
+          ><span>
+            <IconComponent type="regular" icon="user" />
+            {{ students }} Students</span
+          >
         </p>
         <p>{{ description }}</p>
       </div>
@@ -18,6 +23,8 @@
 </template>
 
 <script>
+import IconComponent from "@/components/atoms/IconComponent.vue";
+
 export default {
   name: "CourseCardComponent",
   props: {
@@ -27,6 +34,9 @@ export default {
     hours: Number,
     students: Number,
     img: String,
+  },
+  components: {
+    IconComponent,
   },
 };
 </script>

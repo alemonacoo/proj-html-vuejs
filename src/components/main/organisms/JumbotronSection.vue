@@ -14,21 +14,31 @@
       <img src="@/assets/img/home-business-hero-avatar.png" alt="" />
     </div>
     <div class="action-buttons">
-      <div>O</div>
-      <div>O</div>
-      <div>O</div>
-      <div>O</div>
+      <div>
+        <IconComponent class="icon" type="solid" icon="ruler-combined" />
+      </div>
+      <div>
+        <IconComponent class="icon" type="solid" icon="life-ring" />
+      </div>
+      <div>
+        <IconComponent class="icon" type="solid" icon="book" />
+      </div>
+      <div>
+        <IconComponent class="icon" type="solid" icon="cart-shopping" />
+      </div>
     </div>
   </div>
 </template>
 
 <script>
 import ButtonComponent from "@/components/atoms/ButtonComponent.vue";
+import IconComponent from "@/components/atoms/IconComponent.vue";
 
 export default {
   name: "JumbotronSection",
   components: {
     ButtonComponent,
+    IconComponent,
   },
 };
 </script>
@@ -61,14 +71,22 @@ export default {
     background-repeat: no-repeat;
   }
   .action-buttons {
+    @include flex-col;
     position: absolute;
-    display: flex;
     right: 0;
-    top: 20%;
-    flex-direction: column;
-    padding: 5px;
+    top: 15%;
+    padding: 6px;
     background-color: white;
     box-shadow: 0px 1px 3px -1px black;
+    gap: 5px;
+
+    .icon {
+      font-size: 0.7rem;
+    }
+    .icon:hover {
+      cursor: pointer;
+      color: grey;
+    }
   }
 }
 </style>

@@ -13,7 +13,7 @@
         :key="list.title"
         @click="setActiveList(list)"
       >
-        {{ list.title }} <i class="fa-solid fa-caret-down"></i>
+        {{ list.title }}
         <div v-if="list === activeIndex">
           <ul>
             <li v-for="link in list.links" :key="link.name">
@@ -58,13 +58,13 @@
 
       <!-- User -->
       <div class="user">
-        <font-awesome-icon class="icon" icon="fa-regular fa-circle-user" />
+        <IconComponent class="icon" type="regular" icon="circle-user" />
       </div>
 
       <!-- Search Bar -->
       <div class="search-bar">
         <input type="text" name="search" placeholder="Search..." />
-        <font-awesome-icon class="icon" icon="fa-solid fa-magnifying-glass" />
+        <IconComponent class="icon" type="solid" icon="magnifying-glass" />
       </div>
     </div>
   </header>
@@ -73,17 +73,7 @@
 <script>
 import dropdowns from "@/data/headerDropdowns.json";
 import languages from "@/data/languages.json";
-
-//Importing fontawesome star icons
-import Vue from "vue";
-import { library } from "@fortawesome/fontawesome-svg-core";
-import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
-import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
-import { faCircleUser } from "@fortawesome/free-regular-svg-icons";
-import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
-library.add(faCircleUser, faMagnifyingGlass, faChevronDown);
-Vue.component("font-awesome-icon", FontAwesomeIcon);
-Vue.config.productionTip = false;
+import IconComponent from "@/components/atoms/IconComponent.vue";
 
 export default {
   name: "HeaderComponent",
@@ -94,6 +84,9 @@ export default {
       activeIndex: 0,
       displayedLanguages: false,
     };
+  },
+  components: {
+    IconComponent,
   },
   mounted() {
     console.log("dropdown lists in header: ", dropdowns);

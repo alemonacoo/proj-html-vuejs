@@ -1,8 +1,12 @@
 <template>
   <div class="QandA">
     <div class="icon-container" :class="status ? 'active' : ''">
-      <p v-if="status">A</p>
-      <p v-else>C</p>
+      <p v-if="status">
+        <IconComponent type="regular" icon="circle-up" />
+      </p>
+      <p v-else>
+        <IconComponent type="regular" icon="circle-down" />
+      </p>
     </div>
     <div class="text-container" :class="status ? 'active' : ''">
       <h4>
@@ -16,12 +20,17 @@
 </template>
 
 <script>
+import IconComponent from "@/components/atoms/IconComponent.vue";
+
 export default {
   name: "QandACard",
   props: {
     question: String,
     answer: String,
     status: Boolean,
+  },
+  components: {
+    IconComponent,
   },
 };
 </script>
