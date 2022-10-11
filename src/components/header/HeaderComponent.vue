@@ -36,12 +36,17 @@
       if another language is selected then languages[0] changes  -->
       <div @click="displayedLanguages = !displayedLanguages">
         <div class="list">
-          <img
-            :src="require('../../assets/img/' + languages[0].image)"
-            alt="language"
-            class="language-img"
-          />
-          {{ languages[0].language }}
+          <div id="selected-language-title">
+            <img
+              :src="require('../../assets/img/' + languages[0].image)"
+              alt="language"
+              class="language-img"
+            />
+            <p id="selected-language">
+              {{ languages[0].language }}
+              <IconComponent class="icon" type="solid" icon="chevron-down" />
+            </p>
+          </div>
         </div>
         <ul v-if="displayedLanguages">
           <li
@@ -150,8 +155,8 @@ header {
     list-style-type: none;
     padding: 0px 5px;
     background-color: white;
-    transform: translate(-5px, 5px);
-    box-shadow: 0px 5px 6px -1px black;
+    transform: translate(0px, 10px);
+    box-shadow: 1px 1px 5px 4px lightgrey;
     z-index: 1;
     li {
       margin: 7px 0px;
@@ -174,6 +179,13 @@ header {
       &:hover {
         cursor: pointer;
       }
+    }
+  }
+  #selected-language-title {
+    @include flex-row;
+    .icon {
+      margin-left: 4px;
+      font-size: 0.5rem;
     }
   }
   input {
