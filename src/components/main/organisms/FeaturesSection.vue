@@ -54,7 +54,7 @@
 </template>
 
 <script>
-import ButtonComponent from "@/components/main/atoms/ButtonComponent.vue";
+import ButtonComponent from "@/components/atoms/ButtonComponent.vue";
 import FeatureCardComponent from "@/components/main/molecules/FeatureCardComponent.vue";
 import TitleComponent from "@/components/main/molecules/TitleComponent.vue";
 

@@ -23,7 +23,7 @@
 </template>
 
 <script>
-import ButtonComponent from "@/components/main/atoms/ButtonComponent.vue";
+import ButtonComponent from "@/components/atoms/ButtonComponent.vue";
 
 export default {
   name: "JumbotronSection",

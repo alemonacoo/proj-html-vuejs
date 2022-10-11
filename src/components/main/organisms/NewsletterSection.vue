@@ -23,7 +23,7 @@
 </template>
 
 <script>
-import ButtonComponent from "@/components/main/atoms/ButtonComponent.vue";
+import ButtonComponent from "@/components/atoms/ButtonComponent.vue";
 
 export default {
   name: "NewsletterSection",
@@ -40,6 +40,7 @@ export default {
   @include flex-col;
   height: 40vh;
   position: relative;
+  margin-bottom: 5%;
   .title-container {
     @include flex-col;
     gap: 20px;

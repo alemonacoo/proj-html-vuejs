@@ -1,0 +1,74 @@
+[
+  {
+    "title": "Address",
+    "list": [
+      {
+        "name": "382 NE 191st St #97394 Miami, FL 33179-38899",
+        "link": ""
+      },
+      {
+        "name": "+1 (305) 547-9909 (9am - 5pm EST, Monday - Friday)",
+        "link": ""
+      },
+      {
+        "name": "support@maxcoach.com",
+        "link": ""
+      }
+    ]
+  },
+  {
+    "title": "Explore",
+    "list": [
+      {
+        "name": "Start Here",
+        "link": "https://google.com"
+      },
+      {
+        "name": "Blog",
+        "link": "https://google.com"
+      },
+      {
+        "name": "About us",
+        "link": "https://google.com"
+      }
+    ]
+  },
+  {
+    "title": "",
+    "list": [
+      {
+        "name": "Success story",
+        "link": "https://google.com"
+      },
+      {
+        "name": "Courses",
+        "link": "https://google.com"
+      },
+      {
+        "name": "Contact us",
+        "link": "https://google.com"
+      }
+    ]
+  },
+  {
+    "title": "Information",
+    "list": [
+      {
+        "name": "Membership",
+        "link": "https://google.com"
+      },
+      {
+        "name": "Purchase guide",
+        "link": "https://google.com"
+      },
+      {
+        "name": "Privacy policy",
+        "link": "https://google.com"
+      },
+      {
+        "name": "Terms of service",
+        "link": "https://google.com"
+      }
+    ]
+  }
+]

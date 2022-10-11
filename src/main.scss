@@ -38,3 +38,7 @@ $link_water_ligth_vibrant: #ecf2f9;
 @mixin AM_small_padding {
   padding: 5%;
 }
+
+@mixin border-debug {
+  border: solid white 1px;
+}
