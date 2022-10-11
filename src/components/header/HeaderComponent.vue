@@ -13,7 +13,12 @@
         :key="list.title"
         @click="setActiveList(list)"
       >
-        {{ list.title }}
+        <p>
+          <span>{{ list.title }}</span
+          ><span>
+            <IconComponent class="icon" type="solid" icon="chevron-down"
+          /></span>
+        </p>
         <div v-if="list === activeIndex">
           <ul>
             <li v-for="link in list.links" :key="link.name">
@@ -117,7 +122,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding-left: 10%;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   min-height: 7vh;
   max-height: 7vh;
   width: 100%;
@@ -134,6 +139,10 @@ header {
       margin: 0px 14px;
       height: 7vh;
       justify-content: center;
+      .icon {
+        font-size: 0.5rem;
+        margin-left: 4px;
+      }
     }
   }
   ul {
