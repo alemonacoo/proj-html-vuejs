@@ -149,6 +149,7 @@ header {
       min-width: 100px;
       a {
         color: black;
+        text-decoration: none;
       }
     }
   }
